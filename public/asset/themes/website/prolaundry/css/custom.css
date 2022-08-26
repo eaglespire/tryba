@@ -1,0 +1,40 @@
+.service-image{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.circle-height{
+    height: 80px;
+    width: 80px;
+    background-color: var(--primary-color);
+}
+.circle-height p {
+    font-size: 24px;
+    margin: 0px !important;
+}
+
+.date-picker{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+.time-picker{
+    padding: 14px;
+    outline: none;
+    width: 100%;
+
+}
+@media only screen and (max-width: 576px) {
+    .circle-height{
+        height: 60px;
+        width: 60px;    
+    }
+    
+    .service-image{
+        height: 225px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+}

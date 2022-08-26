@@ -1,0 +1,586 @@
+.datepicker thead th.dow,
+.mfp-bottom-bar,
+.tt-top-panel .tt-row,
+header .tt-logo .tt-title,
+header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item .tt-item-descriptions .tt-title,
+header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-total-row .tt-cart-total-title,
+header .tt-search .tt-dropdown-menu .tt-search-input,
+header .tt-search .tt-dropdown-menu form .tt-search-input,
+.tt-desctop-menu .tt-badge,
+.tt-desctop-menu nav > ul > li.dropdown > a,
+.tt-desctop-menu .tt-title-submenu,
+.tt-promo-02 .tt-description .tt-title-small,
+.tt-promo-02 .tt-description .tt-title-large,
+.tt-promo-02 .tt-description .tt-title-xlarge,
+.panel-menu #mm0.mmpanel a:not(.mm-close),
+.panel-menu .mmpanel:not(#mm0) a:not(.mm-original-link),
+.panel-menu .mmpanel .tt-badge,
+.panel-menu .mm-original-link,
+footer .tt-logo .tt-title,
+.tt-listing-post .tt-post .tt-post-content .tt-tag,
+.tt-post-single .tt-tag,
+.tt-blog-thumb .tt-title-description .tt-tag,
+.tt-blog-thumb .tt-title-description .tt-title,
+.tt-aside-post .item .tt-tag,
+.tt-aside-post .item .tt-title,
+.tt-pagination ul li a,
+.tt-layout-01-post .tt-post .tt-post-content .tt-tag,
+.tt-blog-masonry .tt-filter-nav .button,
+.tt-portfolio-masonry .tt-filter-nav .button,
+.tt-portfolio-content figure figcaption .tt-title,
+.tt-product-single-info .tt-price,
+.tt-input-counter.style-01 input,
+.tt-collapse-block .tt-item .tt-collapse-title,
+.tt-review-block .tt-review-form .tt-message-info,
+.tt-review-block .tt-review-form .tt-rating-indicator .tt-title,
+.tt-product-single-info .tt-label [class^="tt-label"],
+.tt-title-options,
+.tt-modal-addtocart.desctope .tt-modal-messages,
+.tt-modal-addtocart.desctope .tt-modal-product .tt-title,
+.tt-modal-addtocart.desctope .tt-modal-product .tt-qty,
+.tt-modal-addtocart.desctope .tt-product-total,
+.tt-modal-addtocart.desctope .tt-cart-total .tt-total,
+.tt-modal-addtocart.mobile .tt-modal-messages,
+.tt-modal-newsletter .tt-modal-newsletter-promo .tt-title-small,
+.tt-modal-newsletter .tt-modal-newsletter-promo .tt-title-large,
+.tt-modal-newsletter .tt-modal-newsletter-promo p,
+.tt-filters-options .tt-btn-toggle a,
+.tt-btn-col-close a,
+.tt-aside .tt-item .tt-content .tt-title,
+.tt-product.tt-view .tt-description .tt-title,
+.tt-product-design02.tt-view .tt-description .tt-title,
+.tt-product.tt-view .tt-description .tt-btn-addtocart,
+.tt-product-design02.tt-view .tt-description .tt-btn-addtocart,
+.tt-product:not(.tt-view) .tt-description .tt-add-info,
+.tt-product:not(.tt-view) .tt-description .tt-title,
+.tt-product:not(.tt-view) .tt-description .tt-price,
+.tt-product:not(.tt-view) .tt-description .tt-btn-addtocart,
+.tt-product-design02:not(.tt-view) .tt-description .tt-title,
+.tt-product-design02:not(.tt-view) .tt-btn-addtocart,
+.tt-product:not(.tt-view) .tt-description .tt-title,
+  .tt-product-design02:not(.tt-view) .tt-description .tt-title,
+  .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart,
+  .tt-product-design02:not(.tt-view) .tt-description .tt-btn-addtocart,
+  .tt-promo-box .tt-description .tt-title-small,
+  .tt-promo-box .tt-description .tt-title-large,
+  .tt-promo-fullwidth .tt-description .tt-title-small,
+  .tt-promo-fullwidth .tt-description .tt-title-large,
+  .tt-promo-fullwidth .tt-description p,
+  .tt-promo-fullwidth-02 .tt-description .tt-title-large,
+  .tt-collection-item .tt-description .tt-title,
+  .tt-promo02 .tt-description .tt-title-small,
+  .tt-promo02 .tt-description .tt-title-large,
+  .tt-promo-fixed .tt-description .tt-title,
+  .tt-shopcart-table .tt-title,
+  .tt-shopcart-table01,
+  .tt-shopcart-table-02 .tt-title,
+  .tt-shopping-layout .tt-link-back,
+  .tt-table-shop-01 thead th,
+  .tt-table-shop-02 thead th,
+  .tt-table-shop-02 tbody td:first-child,
+  .tt-table-shop-03 strong,
+  .tt-table-shop-03 thead tr th,
+  .tt-shop-info .tt-item .tt-title,
+  .tt-hotspot-content .tt-description .tt-title,
+  .slider-revolution .tp-caption1-wd-1,
+  .slider-revolution .tp-caption1-wd-2,
+  .slider-revolution .tp-caption1-wd-3,
+  .slider-revolution .tp-caption2-wd-1,
+  .slider-revolution .tp-caption2-wd-2,
+  .tt-slick-main-item .tt-description .tt-title-small,
+  .tt-slick-main-item .tt-description .tt-title-large,
+  #tt-boxedbutton .rtlbutton,
+  #tt-boxedbutton .rtlbutton-color .box-description .box-title,
+  .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-title,
+  .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-price,
+  .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-btn .tt-btn-addtocart,
+  .tt-compare-table .tt-item .tt-image-box .tt-title,
+  .tt-compare-table .tt-item .tt-image-box .tt-price,
+  .tt-compare-table .tt-item .tt-btn-addtocart,
+  body,
+  .btn,
+  .btn-link,
+.btn-link:focus,
+.btn-underline,
+h1, h2, h3, h4, h5, h6,
+.tt-blockquote .tt-title,
+.tt-blockquote-02 .tt-title,
+.tt-table-01 thead tr th,
+.tt-table-02 tbody tr td:first-child,
+.tt-block-title .tt-description,
+.form-default .form-group label:not(.error),
+.form-default .form-control,
+.tt-slick-quantity,
+.tt-gift-layout .tt-gift-box .tt-description .tt-sum,
+.tt-back-to-top,
+.tt-layout-vertical .tt-title,
+.tt-tabs-default li > a,
+.tt-content-info .tt-subscription .tt-text-large{
+	font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1230px){
+    .slider-revolution .tp-caption1-wd-3{
+        line-height: 1.6;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+}
+
+.tt-block-title .tt-title ,
+.tt-block-title .tt-description{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.tt-product:not(.tt-view) .tt-description .tt-title,
+.tt-product .tt-description .tt-add-info li a{
+    font-weight: 400;
+}
+
+.slider-revolution [class^="btn"]{
+    background: #ffffff;
+    color: #191919;
+}
+.slider-revolution [class^="btn"]:hover{
+    background: #191919;
+    color: #ffffff;
+}
+.slider-revolution .tp-caption1-wd-1{
+  font-weight: 300;
+}
+footer .tt-newsletter .form-control{
+  font-family: 'Roboto', sans-serif;
+}
+.slider-revolution .tp-caption1-wd-1,
+.slider-revolution .tp-caption1-wd-2,
+.tt-promo-box.tt-one-child .tt-description .tt-description-wrapper > *:not(.tt-background){
+  font-family: 'Roboto Slab', sans-serif;
+}
+@media (min-width: 1025px){
+    .tt-product:not(.tt-view) .tt-image-box .tt-label-location [class^="tt-label-"]{
+      padding-bottom: 2px;
+    }
+}
+
+::-webkit-input-placeholder{font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 600;}
+::-moz-placeholder      {font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 600;}
+:-moz-placeholder       {font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 600;}
+:-ms-input-placeholder  {font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 600;}
+
+@media (max-width: 1024px) and (min-width: 790px){
+  .slider-revolution .tp-caption1-wd-3{
+        line-height: 1.5;
+  }
+}
+
+
+@media (min-width: 1230px){
+  .slider-revolution .tp-caption1-wd-1{
+        font-size: 40px;
+  }
+  .slider-revolution .tp-caption1-wd-2{
+        font-size: 70px;
+  }
+  .slider-revolution .btn{
+    font-weight: 500;
+  }
+}
+
+.tt-product:not(.tt-view) .tt-description .tt-btn-addtocart:hover,
+.tt-product-design02:not(.tt-view) .tt-description .tt-btn-addtocart:hover{
+  background: #191919 !important;
+}
+
+ul.tt-options-swatch li .options-color-img:after{
+    border-color: #191919;
+}
+
+.fs-1 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+.fs-2 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+.fs-3 {
+  font-size: calc(1.26rem + 0.12vw) !important;
+}
+.fs-4 {
+  font-size: 1.25rem !important;
+}
+.fs-5 {
+  font-size: 1.15rem !important;
+}
+.fs-6 {
+  font-size: 1.075rem !important;
+}
+.fs-7 {
+  font-size: 0.95rem !important;
+}
+.fs-8 {
+  font-size: 0.85rem !important;
+}
+.fs-9 {
+  font-size: 0.75rem !important;
+}
+.fs-10 {
+  font-size: 0.5rem !important;
+}
+
+.h-25 {
+  height: 25% !important;
+}
+.h-50 {
+  height: 50% !important;
+}
+.h-75 {
+  height: 75% !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.h-auto {
+  height: auto !important;
+}
+.h-1px {
+  height: 1px !important;
+}
+.h-2px {
+  height: 2px !important;
+}
+.h-3px {
+  height: 3px !important;
+}
+.h-4px {
+  height: 4px !important;
+}
+.h-5px {
+  height: 5px !important;
+}
+.h-6px {
+  height: 6px !important;
+}
+.h-7px {
+  height: 7px !important;
+}
+.h-8px {
+  height: 8px !important;
+}
+.h-9px {
+  height: 9px !important;
+}
+.h-10px {
+  height: 10px !important;
+}
+.h-15px {
+  height: 15px !important;
+}
+.h-20px {
+  height: 20px !important;
+}
+.h-25px {
+  height: 25px !important;
+}
+.h-30px {
+  height: 30px !important;
+}
+.h-35px {
+  height: 35px !important;
+}
+.h-40px {
+  height: 40px !important;
+}
+.h-45px {
+  height: 45px !important;
+}
+.h-50px {
+  height: 50px !important;
+}
+.h-55px {
+  height: 55px !important;
+}
+.h-60px {
+  height: 60px !important;
+}
+.h-65px {
+  height: 65px !important;
+}
+.h-70px {
+  height: 70px !important;
+}
+.h-75px {
+  height: 75px !important;
+}
+.h-80px {
+  height: 80px !important;
+}
+.h-85px {
+  height: 85px !important;
+}
+.h-90px {
+  height: 90px !important;
+}
+.h-95px {
+  height: 95px !important;
+}
+.h-100px {
+  height: 100px !important;
+}
+.h-125px {
+  height: 125px !important;
+}
+.h-150px {
+  height: 150px !important;
+}
+.h-175px {
+  height: 175px !important;
+}
+.h-200px {
+  height: 200px !important;
+}
+.h-225px {
+  height: 225px !important;
+}
+.h-250px {
+  height: 250px !important;
+}
+.h-275px {
+  height: 275px !important;
+}
+.h-300px {
+  height: 300px !important;
+}
+.h-325px {
+  height: 325px !important;
+}
+.h-350px {
+  height: 350px !important;
+}
+.h-375px {
+  height: 375px !important;
+}
+.h-500px {
+  height: 500px !important;
+}
+.h-425px {
+  height: 425px !important;
+}
+.h-450px {
+  height: 450px !important;
+}
+.h-475px {
+  height: 475px !important;
+}
+.h-500px {
+  height: 500px !important;
+}
+.h-550px {
+  height: 550px !important;
+}
+.h-600px {
+  height: 600px !important;
+}
+.h-650px {
+  height: 650px !important;
+}
+.h-700px {
+  height: 700px !important;
+}
+.h-750px {
+  height: 750px !important;
+}
+.h-800px {
+  height: 800px !important;
+}
+.h-850px {
+  height: 850px !important;
+}
+.h-900px {
+  height: 900px !important;
+}
+.h-950px {
+  height: 950px !important;
+}
+.h-1000px {
+  height: 1000px !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-auto {
+  width: auto !important;
+}
+.w-1px {
+  width: 1px !important;
+}
+.w-2px {
+  width: 2px !important;
+}
+.w-3px {
+  width: 3px !important;
+}
+.w-4px {
+  width: 4px !important;
+}
+.w-5px {
+  width: 5px !important;
+}
+.w-6px {
+  width: 6px !important;
+}
+.w-7px {
+  width: 7px !important;
+}
+.w-8px {
+  width: 8px !important;
+}
+.w-9px {
+  width: 9px !important;
+}
+.w-10px {
+  width: 10px !important;
+}
+.w-15px {
+  width: 15px !important;
+}
+.w-20px {
+  width: 20px !important;
+}
+.w-25px {
+  width: 25px !important;
+}
+.w-30px {
+  width: 30px !important;
+}
+.w-35px {
+  width: 35px !important;
+}
+.w-40px {
+  width: 40px !important;
+}
+.w-45px {
+  width: 45px !important;
+}
+.w-50px {
+  width: 50px !important;
+}
+.w-55px {
+  width: 55px !important;
+}
+.w-60px {
+  width: 60px !important;
+}
+.w-65px {
+  width: 65px !important;
+}
+.w-70px {
+  width: 70px !important;
+}
+.w-75px {
+  width: 75px !important;
+}
+.w-80px {
+  width: 80px !important;
+}
+.w-85px {
+  width: 85px !important;
+}
+.w-90px {
+  width: 90px !important;
+}
+.w-95px {
+  width: 95px !important;
+}
+.w-100px {
+  width: 100px !important;
+}
+.w-125px {
+  width: 125px !important;
+}
+.w-150px {
+  width: 150px !important;
+}
+.w-175px {
+  width: 175px !important;
+}
+.w-200px {
+  width: 200px !important;
+}
+.w-225px {
+  width: 225px !important;
+}
+.w-250px {
+  width: 250px !important;
+}
+.w-275px {
+  width: 275px !important;
+}
+.w-300px {
+  width: 300px !important;
+}
+.w-325px {
+  width: 325px !important;
+}
+.w-350px {
+  width: 350px !important;
+}
+.w-375px {
+  width: 375px !important;
+}
+.w-500px {
+  width: 500px !important;
+}
+.w-425px {
+  width: 425px !important;
+}
+.w-450px {
+  width: 450px !important;
+}
+.w-475px {
+  width: 475px !important;
+}
+.w-500px {
+  width: 500px !important;
+}
+.w-550px {
+  width: 550px !important;
+}
+.w-600px {
+  width: 600px !important;
+}
+.w-650px {
+  width: 650px !important;
+}
+.w-700px {
+  width: 700px !important;
+}
+.w-750px {
+  width: 750px !important;
+}
+.w-800px {
+  width: 800px !important;
+}
+.w-850px {
+  width: 850px !important;
+}
+.w-900px {
+  width: 900px !important;
+}
+.w-950px {
+  width: 950px !important;
+}
+.w-1000px {
+  width: 1000px !important;
+}

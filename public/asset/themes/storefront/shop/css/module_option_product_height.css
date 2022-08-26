@@ -1,0 +1,53 @@
+#same_product_height #tt-pageContent .tt-product .tt-image-box,
+#same_product_height #tt-pageContent .tt-product-design02 .tt-image-box {
+  height: 200px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#same_product_height #tt-pageContent .tt-product .tt-image-box img,
+#same_product_height #tt-pageContent .tt-product-design02 .tt-image-box img {
+  max-height: 200px;
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+#same_product_height #tt-pageContent .tt-product .tt-image-box .tt-img-roll-over,
+#same_product_height #tt-pageContent .tt-product-design02 .tt-image-box .tt-img-roll-over {
+  text-align: center;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}

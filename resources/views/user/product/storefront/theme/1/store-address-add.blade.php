@@ -1,0 +1,62 @@
+@extends('user.product.storefront.theme.1.menu')
+
+@section('content')
+<div class="tt-breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="{{route('store.index', ['id' => $store->store_url])}}">{{__('Home')}}</a></li>
+      <li><a href="{{route('store.customer.address', ['id'=>$store->store_url])}}">{{__('Address')}}</a></li>
+      <li><a href="javascript:void;">{{__('Add address')}}</a></li>
+    </ul>
+  </div>
+</div>
+<div id="tt-pageContent">
+  <div class="container-indent">
+    <div class="container">
+      <div class="tt-login-form">
+        <div class="row">
+          <div class="col-xs-12 col-md-10 offset-md-1">
+            <div class="tt-item">
+              <div class="form-default form-top">
+                <form action="{{route('store.customer.address.save', ['id'=>$store->store_url])}}" method="post">
+                  @csrf
+                  <div class="form-group">
+                    <label>{{__('LINE 1')}}*</label>
+                    <input type="text" name="line_1" class="form-control" placeholder="{{__('Enter Address')}}" required>
+                  </div>
+                  <div class="form-group">
+                    <label>{{__('LINE 2')}}</label>
+                    <input type="text" name="line_2" class="form-control" placeholder="{{__('Enter Second Address (optional)')}}">
+                  </div>
+                  <div class="form-group">
+                    <label>{{__('City')}}</label>
+                    <input type="text" name="city" class="form-control" placeholder="{{__('Enter City')}}">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="loginInputLast">{{__('ZIP/POSTAL CODE')}} *</label>
+                        <input type="text" name="postal_code" maxlength="6" class="form-control" id="loginInputLast" placeholder="{{__('Enter Postal code')}}" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>{{__('STATE/COUNTY')}} *</label>
+                    <select class="form-control" id="state" name="state" required>
+                      <option value="">{{__('Select your state/county')}}</option>
+                      @foreach($shipping as $val)
+                      <option value="{{$val->state}}*{{$val->id}}*{{$val->shippingState->iso2}}">{{$val->shippingState->name}}</option>
+                      @endforeach
+                    </select>
+                  </div>
+                  <input type="hidden" name="store_id" value="{{$store->id}}">
+                  <div class="row">
+                    <div class="col-auto mr-auto">
+                      <div class="form-group">
+                        <button class="btn btn-border" type="submit">{{__('ADD')}}</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>

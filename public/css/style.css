@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main{
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items: center;
+}
+
+.card{
+    background-color:white;
+    width:50%;
+    border:1px solid black;
+    margin-top:9%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0.5rem;
+}
+
+.image{
+    width: 6rem;
+    margin: auto;
+    margin-top:2rem;
+}
+.image img{
+ object-fit: cover;
+
+}
+
+.toptext{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    width:60%;
+}
+.toptext span{
+text-transform: capitalize;
+text-align: center;
+font-size: larger;
+font-weight: bold;
+margin-top:1rem;
+font-size: xx-large;
+font-family:Poppins;
+margin: 0%;
+}
+
+.line{
+    width:80%;
+    border: 0.5px solid #BCBCBC;
+    margin-top:1rem;
+    margin: auto;
+}
+
+.secondtext{
+ color: #727272;
+ display:flex;
+ flex-direction: column;
+ margin: auto;
+ width:90%;
+ margin-top: 2rem;
+ text-align: center;
+ font-size:x-large;
+}
+.secondtext span{
+    margin:3px;
+}
+
+.btn{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.btn button{
+    background-color: #00AFEF;
+    color: white;
+    border-radius: 20px 20px;
+    width:350px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: x-large;
+}
+
+.textlong{
+    color: #727272;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    width:100%;
+    margin-top:0px;
+    text-align: center;
+    font-size:x-large;
+}
+
+.textlong span{
+    margin:3px;
+}
+
+.appleplay{
+    margin: 2.5rem;
+}
+
+.socialmedia{
+    width:30%;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin-top:1rem;
+}
+
+.socialmedia button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.socialmedia button img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.socialmedia table{
+    width:100%;
+}
+.comment{
+    width:100%;
+    padding:1rem;
+    text-align: center;
+    color:#727272;
+}
+
+.three{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: auto;
+    margin-top:10px;
+    text-align: center;
+}
+
+.three h2{
+text-transform: capitalize;
+text-decoration: underline;
+color: #727272;
+}
+
+.socialmedia table{
+    width:100%;
+}
+
+.last{
+ margin-top:2rem;
+ /* margin: auto; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.last button{
+    height:40px;
+    width:44px;
+    border-radius:5px 5px;
+    background-color:#00AFEF;
+    border: none;
+    outline: none;
+
+}

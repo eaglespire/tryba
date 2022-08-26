@@ -1,0 +1,116 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Store\DomainController;
+use App\Http\Controllers\Store\StorefrontController;
+use App\Http\Controllers\User\ForgotPasswordController;
+use App\Http\Controllers\User\ResetPasswordController;
+use Twilio\Domain;
+
+Route::get('/', [DomainController::class, 'storelink'])->name('home');
+Route::get('/{type?}', [DomainController::class, 'storelink'])->name('website.link');
+    Route::get('articles/all', [DomainController::class, 'storeArticles'])->name('store.blog.index');
+    Route::get('team/all', [DomainController::class, 'storeTeam'])->name('store.team.index');
+    Route::get('review/all', [DomainController::class, 'storeReview'])->name('store.review.index');
+    Route::get('faq/all', [DomainController::class, 'storeFaq'])->name('store.faq.index');
+    Route::get('services/all', [DomainController::class, 'storeServices'])->name('store.services.index');
+    Route::get('services/{service}/{coupon?}', [DomainController::class, 'storeBook'])->name('store.services.book');
+    Route::post('getcalendar', [DomainController::class, 'getCalendar'])->name('store.calender');
+    Route::post('getavailabletime', [DomainController::class, 'getAvailableTime'])->name('store.availabletime');
+    Route::get('products/all', [DomainController::class, 'storeProducts'])->name('store.products.index');
+    Route::get('articles/category/{title}/{cat_id}', [DomainController::class, 'storeArticles'])->name('store.blog.cat.index');
+    Route::get('blog/{ref}/{slug}', [DomainController::class, 'storeBlogView'])->name('store.blog.view');
+    Route::get('page/{ref}/{slug}', [DomainException::class, 'storePageView'])->name('store.page.view');
+    Route::post('search', [DomainController::class, 'searchstorelink'])->name('search.website.link');
+    Route::get('category/{cat}/{slug?}', [DomainController::class, 'storecat'])->name('store.cat');
+    Route::get('product/{product}', [DomainController::class, 'productlink'])->name('sproduct.link');
+    Route::get('apply-coupon/{id}/{coupon?}', [DomainController::class, 'sask'])->name('user.sask');
+    Route::post('product/checkout', [DomainController::class, 'checkproduct'])->name('check.product');
+    Route::post('booking/checkout', [DomainController::class, 'checkbooking'])->name('check.booking');
+    Route::post('validate-coupon/{id}', [DomainController::class, 'checkcoupon'])->name('check.coupon');
+    Route::post('bookcoupon/{id}', [DomainController::class, 'bookcoupon'])->name('book.coupon');
+    Route::get('delete/cart/{id}', [DomainController::class, 'deletecart'])->name('delete.cart');
+    Route::get('delete/wishlist/{id}', [DomainController::class, 'deletewishlist'])->name('delete.wishlist');
+    Route::post('update-cart', [DomainController::class, 'updatecart'])->name('update.cart');
+    Route::get('customer-password/reset', [DomainController::class, 'customershowLinkRequestForm'])->name('customer.password.request');
+    Route::post('customer/reset-password', [DomainController::class, 'customersendResetLinkEmail'])->name('customer.password.email');
+    Route::get('customer-password/reset/{token}', [DomainController::class, 'customershowResetForm'])->name('customer.password.reset');
+    Route::post('customer-password/reset', [DomainController::class, 'customerreset']);
+    Route::group(['prefix' => 'customer',], function () {
+        Route::post('login', [DomainController::class, 'submitcustomerlogin'])->name('submitcustomerlogin');
+        Route::post('submit-track-order', [DomainController::class, 'submittrackorder'])->name('submittrackorder');
+        Route::get('login', [DomainController::class, 'customerlogin'])->name('customer.login');
+        Route::get('/receipt/{id}', [DomainController::class, 'generatereceipt'])->name('website.receipt');
+        Route::get('track-order', [DomainController::class, 'trackorder'])->name('track.order');
+        Route::get('/track-order-status/{id}', [DomainController::class, 'trackorderstatus'])->name('track.order.status');
+        Route::post('register', [DomainController::class, 'submitcustomerregister'])->name('submitcustomerregister');
+        Route::get('register', [DomainController::class, 'customerregister'])->name('customer.register');
+        Route::get('option', [DomainController::class, 'customeroption'])->name('customer.option');
+        Route::post('address-state', [DomainController::class, 'customeraddressstate'])->name('customer.address.state');
+        Route::post('user-address-state', [DomainController::class, 'useraddressstate'])->name('user.address.state');
+        Route::post('ffff-user-address-state', [DomainController::class, 'useraddressstatef'])->name('user.address.statef');
+        Route::post('user-address-country', [DomainController::class, 'useraddresscountry'])->name('user.address.country');
+        Route::post('ffff-user-address-country', [DomainController::class, 'useraddresscountryf'])->name('user.address.countryf');
+        Route::post('customer-update-cart', [DomainController::class, 'updatecheckout'])->name('customer.update.cart');
+        Route::get('{store_url}/emtpy-cart/{id}', [DomainController::class, 'emptycart'])->name('customer.empty.cart');
+        Route::group(['middleware' => 'auth:customer'], function () {
+            Route::get('wishlist-add/{id}', [DomainController::class, 'customerwishlistadd'])->name('customer.wishlist.add');
+            Route::get('wishlist', [DomainController::class, 'customerwishlist'])->name('customer.wishlist');
+            Route::get('order', [DomainController::class, 'customerorder'])->name('customer.order');
+            Route::get('bookings', [DomainController::class, 'customerbookings'])->name('customer.bookings');
+            Route::get('account', [DomainController::class, 'customeraccount'])->name('customer.account');
+            Route::post('account-update', [DomainController::class, 'customeraccountupdate'])->name('customer.account.update');
+            Route::post('product-review', [DomainController::class, 'productreview'])->name('product.review');
+            Route::post('booking-review', [DomainController::class, 'bookingreview'])->name('booking.review');
+            Route::get('security', [DomainController::class, 'customersecurity'])->name('customer.security');
+            Route::post('security-update', [DomainController::class, 'customersecurityupdate'])->name('customer.security.update');
+            Route::get('order/{id}', [DomainController::class, 'customerorderstatus'])->name('customer.order.status');
+            Route::get('booking/{id}', [DomainController::class, 'customerbookingstatus'])->name('customer.booking.status');
+            Route::get('address', [DomainController::class, 'customeraddress'])->name('customer.address');
+            Route::get('address-add', [DomainController::class, 'customeraddressadd'])->name('customer.address.add');
+            Route::post('address-save', [DomainController::class, 'customeraddresssave'])->name('customer.address.save');
+            Route::get('address-edit/{id}', [DomainController::class, 'customeraddressedit'])->name('customer.address.edit');
+            Route::get('address-delete/{id}', [DomainController::class, 'customeraddressdelete'])->name('customer.address.delete');
+            Route::post('address-update', [DomainController::class, 'customeraddressupdate'])->name('customer.address.update');
+            Route::get('logout', [DomainController::class, 'logout'])->name('customer.logout');
+        });
+    });
+
+//StoreRoute
+Route::middleware(['CheckIfCustomStoreActive'])->group(function () {
+    Route::group(['prefix' => 'store',], function () {
+        Route::get('/',[DomainController::class,'storelink'])->name('store.index');
+        Route::get('/product/{product}', [DomainController::class, 'productlink'])->name('sproduct.link');
+        Route::post('/search', [DomainController::class, 'searchstorelink'])->name('search.website.link');
+        Route::get('/register', [StorefrontController::class, 'customerregister'])->name('store.customer.register');
+        Route::get('/login', [StorefrontController::class, 'customerlogin'])->name('store.customer.login');
+        Route::post('/login', [StorefrontController::class, 'submitcustomerlogin'])->name('store.submitcustomerlogin');
+        Route::get('/track-order', [StorefrontController::class, 'trackorder'])->name('track.order');
+        Route::post('/order-details', [StorefrontController::class, 'submittrackorder'])->name('submittrackorder');
+        Route::get('/products', [OfflineController::class, 'storeProducts'])->name('store.products.index');
+        Route::post('products/checkout', [OfflineController::class, 'checkproduct'])->name('check.product');
+        Route::get('delete/cart/{id}', [OfflineController::class, 'deletecart'])->name('delete.cart');
+        Route::post('/update-cart', [StorefrontController::class, 'updatecart'])->name('update.cart');
+        Route::get('/cart/{cartid}/{coupon?}', [StorefrontController::class, 'sask'])->name('user.sask');
+        Route::group(['middleware' => 'auth:customer'], function () {
+            Route::get('/wishlist-add/{wishlistId}', [StorefrontController::class, 'customerwishlistadd'])->name('customer.wishlist.add');
+            Route::get('/wishlist', [StorefrontController::class, 'customerwishlist'])->name('store.customer.wishlist');
+            Route::get('/delete/wishlist/{wishlistId}', [StorefrontController::class, 'deletewishlist'])->name('delete.wishlist');
+            Route::get('/order', [StorefrontController::class, 'customerorder'])->name('store.customer.order');
+            Route::get('/bookings', [StorefrontController::class, 'customerbookings'])->name('customer.bookings');
+            Route::get('/account', [StorefrontController::class, 'customeraccount'])->name('store.customer.account');
+            Route::post('/account-update', [OfflineController::class, 'customeraccountupdate'])->name('store.customer.account.update');
+            Route::post('/product-review', [OfflineController::class, 'productreview'])->name('product.review');
+            Route::get('/security', [StorefrontController::class, 'customersecurity'])->name('store.customer.security');
+            Route::post('/security-update', [OfflineController::class, 'customersecurityupdate'])->name('store.customer.security.update');
+            Route::get('order/{id}', [OfflineController::class, 'customerorderstatus'])->name('customer.order.status');
+            Route::get('/address', [StorefrontController::class, 'customeraddress'])->name('store.customer.address');
+            Route::get('/address-add', [StorefrontController::class, 'customeraddressadd'])->name('store.customer.address.add');
+            Route::post('/address-save', [StorefrontController::class, 'customeraddresssave'])->name('store.customer.address.save');
+            Route::get('/address-edit/{addressid}', [OfflineController::class, 'customeraddressedit'])->name('store.customer.address.edit');
+            Route::get('/address-delete/{addressid}', [OfflineController::class, 'customeraddressdelete'])->name('store.customer.address.delete');
+            Route::post('/address-update', [OfflineController::class, 'customeraddressupdate'])->name('store.customer.address.update');
+            Route::get('/logout', [StorefrontController::class, 'logout'])->name('store.customer.logout');
+        });
+    });
+});
